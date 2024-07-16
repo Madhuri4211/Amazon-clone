@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="amazon.css">
+    <title>Amazon.com</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container-header">
+            <div class="messageBox" style="display: none;"></div>
+            <div class="amazon-logo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/04/Amazon-Emblem.jpg" class="logo">
+            </div>
+            <div class="location">
+                <small class="city">Delivering to Visakhapatnam</small>
+                <div class="location-icon">
+                    <i class="fa-solid fa-location-dot" class="loc-icon"></i>
+                    <p class="update-location">Update location</p>
+                </div>
+            </div>
+            <div class="search-container">
+                <select id="category" class="search-select">
+                    <option selected>All</option>
+                    <option>Arts & Crafts</option>
+                    <option>Automative</option>
+                    <option>Baby</option>
+                    <option>Beauty & Personal Care</option>
+                    <option>Books</option>
+                    <option>Mens' Fashion</option>
+                    <option>Computer</option>
+                    <option>Electronic Components</option>
+                    <option>Health & Household</option>
+                    <option>Girls' Fashion</option>
+                    <option>Lugguage</option>
+                    <option>Toys & Games</option>
+                    <option>Sports & Outdoors</option>
+                    <option>Video Games</option>
+                    <option>Tools & Home Improvement</option>
+                    <option>Hardware</option>
+                    <option>Furniture</option>
+                    <option>Pet Bird Supplies</option>
+                    <option>Science Education Supplies</option>
+                    <option>Cell Phones & Accessories</option>
+                    <option>Televisions & Video Products</option>
+                    <option>Perfumes & Fragrances</option>
+                </select>
+                <input type="text" id="input" class="search-input" placeholder="Search Amazon.in">
+                <div>
+                    <button class="search-icon" id="search" onclick="searchData()"><i class="fas fa-search" style="margin-bottom: 6px;"></i></button>
+                </div>
+            </div>
+            <div class="language">
+              <div class="flag">
+                <img src="US-flag.jpg">
+              </div>
+              <select class="lang" >
+                <option selected>EN</option>
+              </select>
+            </div>
+            <div class="signin" id="accounts-link">
+                <small>Hello, sign in</small>
+                    <div class="accounts">
+                        <p class="accounts">
+                            Accounts & Lists
+                        </p>
+                    </div>
+                    <div class="dialogue-box" id="dialogue-box">
+                        <button class="login-btn"><a href="login.html" class="login-link">Login</a></button>
+                        <br><br>
+                        <span class="signup-btn">New Customer?<a href="signup.html" class="signup-link">Create account</a></span>
+                    </div>
+            </div>
+            <div class="returns">
+                <small>Returns</small>
+                <div class="orders">
+                    &Orders
+                </div>
+            </div>
+            <div class="cart">
+                <span><i class="fas fa-shopping-cart"></i></span>
+                <span>Cart</span>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar1">
+        <div class="container-navbar">
+            <div class="all navbox">
+                ☰All
+            </div>
+            <div class="fresh navbox" id="fresh">
+               Fresh
+            </div>
+            <div class="minitv navbox">
+                Amazon miniTV
+            </div>
+            <div class="sell navbox">
+                Sell
+            </div>
+            <div class="bestsellers navbox">
+                Best Sellers
+            </div>
+            <div class="mobiles navbox">
+                Mobiles
+            </div>
+            <div class="deals navbox">
+               Today's Deals
+            </div>
+            <div class="electronics navbox">
+                Electronics
+            </div>
+            <div class="service navbox">
+                Customer Service
+            </div>
+            <div class="prime navbox">
+               Prime
+            </div>
+            
+            <div class="more navbox">
+              New Launches from Mobiles, Electronics & more | Shop now
+            </div>
+        </div>
+    </nav>
+    <div class="background-images">
+        <a href="#" class="prev">&#x25C1;</a>
+        <a href="#" class="next">&#x25B7;</a>
+        <ul>
+            <img src="https://m.media-amazon.com/images/I/71VBt4eTg3L._SX3000_.jpg">
+            <img src="https://m.media-amazon.com/images/I/61lwJy4B8PL._SX3000_.jpg">
+            <img src="https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg">
+            <img src="https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg">
+            <img src="https://m.media-amazon.com/images/I/81KkrQWEHIL._SX3000_.jpg">
+            <img src="https://m.media-amazon.com/images/I/61zAjw4bqPL._SX3000_.jpg">
+        </ul>
+    </div>
+    <div class="link_to_amazon-in">
+        You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery.
+        <span><a href="/">Click here to go to amazon.in</a></span>
+    </div>
+       
+    <div class="box box1">
+        <div class="sub-box">
+            <div class="title">
+                <h3>Appliances for your home Up to 55% off</h3> 
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-372x232----B08RDL6H79._SY232_CB667322346_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B08345R1ZW---372x232._SY232_CB667322346_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Air conditioners</small> 
+                </div>
+                <div class="caption1">
+                    <small>Refrigerators</small> 
+                </div>
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/B07G5J5FYP._SY232_CB667322346_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08CPQVLZT._SY232_CB667322346_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Microwaves</small> 
+                </div>
+                <div class="caption1">
+                    <small>Washing machines</small> 
+                </div>
+            </div>
+            <div class="explore">
+                <a href="/">See more</a>
+            </div>
+        </div>
+        <div class="sub-box">
+            <div class="title">
+                <h3>Up to 60% off | Styles for women</h3> 
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF1-372-232._SY232_CB636048992_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF2-372-232._SY232_CB636048992_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Women's Clothing</small> 
+                </div>
+                <div class="caption1">
+                    <small>Footwear+Handbags</small> 
+                </div>
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF4-186-116._SY116_CB636048992_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Fashion/Gateway/BAU/BTF-Refresh/May/PC_WF/WF3-372-232._SY232_CB636048992_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Watches</small> 
+                </div>
+                <div class="caption1">
+                    <small>Fashion jewellery</small> 
+                </div>
+            </div>
+            <div class="explore">
+                <a href="/">End of season sale</a>
+            </div>
+        </div>
+        <div class="sub-box">
+            <div class="title">
+                <h3>Summer essential appliances | Up to 55% off</h3> 
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/PC_QC_372X232_Summer_Appliances_01_2x._SY232_CB579012182_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/PC_QC_372X232_Summer_Appliances_02_2x._SY232_CB579012182_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Split inverter ACs  </small> 
+                </div>
+                <div class="caption1">
+                    <small>Double doors | Up to 55% off</small> 
+                </div>
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/PC_QC_372X232_Summer_Appliances_03_2x._SY232_CB579012182_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/PC_QC_372X232_Summer_Appliances_04_2x._SY232_CB579012182_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Window ACs | Up to 40% off</small> 
+                </div>
+                <div class="caption1">
+                    <small>Energy efficient refrigerators</small> 
+                </div>
+            </div>
+            <div class="explore">
+                <a href="/">See all</a>
+            </div>
+        </div>
+        <div class="sub-box">
+            <div class="title">
+                <h3>Up to 75% off | Headphones</h3> 
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boat_Desktop_Qc_2x._SY232_CB577919562_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Boult_Desktop_Qc_2x._SY232_CB577919562_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Up to 75% off | boAt </small> 
+                </div>
+                <div class="caption1">
+                    <small>Up to 75% off |boult</small> 
+                </div>
+            </div>
+            <div class="image-box">
+                <div class="image1">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Noise_Desktop_Qc_2x._SY232_CB577919562_.jpg">
+                </div>
+                <div class="image2">
+                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/MSO/CE/Unrec1/Zebronics_Desktop_Qc_2x._SY232_CB577919562_.jpg">
+                </div>
+            </div>
+            <div class="caption">
+                <div class="caption1">
+                    <small>Up to 75% off | Noise</small> 
+                </div>
+                <div class="caption1">
+                    <small>Up to 75% off | Zebronics</small> 
+                </div>
+            </div>
+            <div class="explore">
+                <a href="/">See all offers</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="box">
+        <div class="sub-box1">
+            <div class="title">
+                <h2>Fill your Easter basket with joy</h2>
+            </div>
+            <div class="img-box1">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2024/Easter/Fuji_Easter_Dash_card_2x_EN._SY608_CB581341381_.jpg">
+            </div>
+            <div class="shop">
+                <a href="/">Shop gifts</a>
+            </div>
+        </div>
+        <div class="sub-box1">
+            <div class="title">
+                <h2>Deals in PCs</h2>
+            </div>
+            <div class="img-box1">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v1._SY608_CB573698005_.jpg">
+            </div>
+            <div class="shop">
+                <a href="/">Shop now</a>
+            </div>
+        </div>
+        <div class="sub-box1">
+            <div class="title">
+                <h2>Toys under $25</h2>
+            </div>
+            <div class="img-box1">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Events/2023/EBF23/Fuji_Desktop_Single_image_EBF_2x_v3._SY608_CB573698005_.jpg">
+            </div>
+            <div class="shop">
+                <a href="/">Shop now</a>
+            </div>
+        </div>
+        <div class="sub-box1">
+            <div class="title">
+                <h2>Shop activity trackers and smartwatches</h2>
+            </div>
+            <div class="img-box1">
+                <img src="https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/September/DashboardCards/Fuji_Dash_SmartWatch_2X._SY608_CB639922111_.jpg">
+            </div>
+            <div class="shop">
+                <a href="/">Shop now</a>
+            </div>
+        </div>
+    </div>
+   <script src="amazon.js"></script>
+</body>
+</html>
